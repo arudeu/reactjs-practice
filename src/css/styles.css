@@ -1,0 +1,65 @@
+*{
+    font-family: 'Helvetica';
+}
+body{
+    background: white;
+}
+#logo-style{
+    width: 110px;
+    height: 50px;
+    filter: brightness(0) invert(1);
+    animation-name: logo-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: 0.3s;
+}
+#logo-style:hover{
+    transition: 0.3s;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+#nav-linksgrp{
+    padding-top: 10px;
+}
+#nav-links{
+    position: relative;
+    font-weight: 900;
+    font-size: 20px;
+    padding:  0 10px;
+    margin: 0 50px;
+    color: white;
+    text-decoration: none;
+    letter-Spacing:-2px;
+}
+#nav-links::after{
+    content: "";
+    position: absolute;
+    height: 7px;
+    background-color: white;
+    width: 0%;
+    left: 0;
+    bottom: 1px;
+    transition: 0.3s;
+}
+#nav-links:hover::after{
+    transition: 0.3s;
+    width: 100%;
+}
+#nav-links:active::after{
+    width: 100%;
+}
+#nav-div{
+    background-color: black;
+    height:50px;
+}
+#nav-links-grp{
+   padding-top: 10px;
+}
+@keyframes logo-animation {
+    0%{transform: translateY(-2px);}
+    25%{transform: translateY(0px);}
+    50%{transform: translateY(-2px);}
+    75%{transform: translateY(0px);}
+    100%{transform: translateY(-2px);}
+} 
+
