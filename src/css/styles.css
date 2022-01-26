@@ -1,65 +1,92 @@
-*{
-    font-family: 'Helvetica';
+* {
+  font-family: "Helvetica";
 }
-body{
-    background: white;
+body {
+  background: #000;
 }
-#logo-style{
-    width: 110px;
-    height: 50px;
-    filter: brightness(0) invert(1);
-    animation-name: logo-animation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    transition: 0.3s;
+#logo-style {
+  width: 110px;
+  height: 50px;
+  filter: brightness(0) invert(1);
+  animation-name: logo-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition: 0.3s;
 }
-#logo-style:hover{
-    transition: 0.3s;
-    transform: translateY(-2px);
-    cursor: pointer;
+#logo-style:hover {
+  transition: 0.3s;
+  transform: translateY(-2px);
+  cursor: pointer;
 }
-#nav-linksgrp{
-    padding-top: 10px;
+#nav-linksgrp {
+  padding-top: 10px;
 }
-#nav-links{
-    position: relative;
-    font-weight: 900;
-    font-size: 20px;
-    padding:  0 10px;
-    margin: 0 50px;
-    color: white;
-    text-decoration: none;
-    letter-Spacing:-2px;
+#nav-links {
+  position: relative;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 0 10px;
+  margin: 0 50px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: -2px;
 }
-#nav-links::after{
-    content: "";
-    position: absolute;
-    height: 7px;
-    background-color: white;
-    width: 0%;
-    left: 0;
-    bottom: 1px;
-    transition: 0.3s;
+#nav-links::after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  background-color: white;
+  width: 0%;
+  left: 0;
+  bottom: 1px;
+  transition: 0.3s;
 }
-#nav-links:hover::after{
-    transition: 0.3s;
-    width: 100%;
+#nav-links:hover::after {
+  transition: 0.3s;
+  width: 100%;
 }
-#nav-links:active::after{
-    width: 100%;
+#nav-links:active::after {
+  width: 100%;
 }
-#nav-div{
-    background-color: black;
-    height:50px;
+#nav-div {
+  background-color: black;
+  height: 50px;
 }
-#nav-links-grp{
-   padding-top: 10px;
+#nav-links-grp {
+  padding-top: 10px;
 }
 @keyframes logo-animation {
-    0%{transform: translateY(-2px);}
-    25%{transform: translateY(0px);}
-    50%{transform: translateY(-2px);}
-    75%{transform: translateY(0px);}
-    100%{transform: translateY(-2px);}
-} 
-
+  0% {
+    transform: translateY(-2px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+.containerbanner {
+  background-color: black;
+  height: 600px;
+}
+#profile-pic {
+  height: 600px;
+}
+@supports (-webkit-text-stroke: 1px white) {
+  #h1-banner {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+    letter-spacing: -11px;
+    font-weight: 900;
+    font-size: 120px;
+    font-style: italic;
+    transform: translateY(100px);
+  }
+}
